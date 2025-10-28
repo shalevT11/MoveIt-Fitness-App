@@ -51,4 +51,11 @@ The app is built using the **MVVM (Model–View–ViewModel)** architecture patt
 
 ---
 
+## 📥 Installation
+
+-  Download the APK from this repository.  
+-  Allow installation from unknown sources on your Android device.  
+-  Open the APK and install.  
+-  Launch MoveIt and start your workouts! 💪
+
 > © 2025 Shalev Turjeman. All rights reserved.
