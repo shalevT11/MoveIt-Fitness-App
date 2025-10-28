@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/try_now"
+
+    >
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-155dp">
+
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scaleX="-1"
+            android:src="@drawable/icon_back"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="16dp" /> <!-- flip -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/back_to_settings"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="230dp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="92dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/choose"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCoach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_small_button"
+                android:layout_marginLeft="5dp"
+                android:text="מאמן"
+                app:backgroundTint="@null"
+                android:textSize="26sp"
+                app:icon="@drawable/personal_trainer"
+                app:iconGravity="textEnd"
+                app:iconPadding="5dp"
+                app:iconSize="40dp"
+                app:iconTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/myHealth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button3"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTrainee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_small_button"
+                android:text="מתאמן"
+                android:layout_marginRight="5dp"
+                app:backgroundTint="@null"
+                android:textSize="26sp"
+                app:icon="@drawable/trainee"
+                app:iconGravity="textEnd"
+                app:iconPadding="5dp"
+                app:iconSize="40dp"
+                app:iconTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/myHealth"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingTop="50dp"
+            android:id="@+id/pick_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/choose">
+
+            <ImageView
+                android:id="@+id/levels_ic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/fitness_level_meter" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="רמה:"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Spinner
+
+                android:id="@+id/spnLevel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_style"
+                android:entries="@array/my_options"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/pick_level">
+
+            <ImageView
+                android:id="@+id/phone_ic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/online_fitness_mobile" />
+
+            <TextView
+                android:id="@+id/textPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="פלאפון:"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/input_field_layout"
+                android:hint="הכנס מספר"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/phone">
+
+            <ImageView
+                android:id="@+id/age_ic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/noback" />
+
+            <TextView
+                android:id="@+id/textAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="גיל:"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <EditText
+                android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/input_field_layout"
+                android:hint="הכנס גיל"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="20dp"
+            android:id="@+id/pick_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/age">
+
+            <ImageView
+                android:id="@+id/gender_ic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/gender" />
+
+            <TextView
+                android:id="@+id/textGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="מין:"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <Spinner
+                android:id="@+id/spnGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_style"
+                android:entries="@array/my_genders"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="0dp"
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pick_gender">
+
+
+            <ImageButton
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/save_ic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
