@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MoveIt</string>
+    <string name="moveit">ברוך הבא לMoveIt</string>
+    <string name="back_to_settings">הגדרות</string>
+    <string name="back_add_lesson">עריכת/יצירת שיעור</string>
+    <string name="back_watch_lesson">רגליים בוערות</string>
+    <string name="head_health_agg">אישור בריאות</string>
+
+
+    <string name="text_preview">בשיעור הזה נעבוד בקצב גבוה עם דגש על חיזוק פלג גוף תחתון. נשלב תרגילים קלאסיים כמו סקווטים, לאנג\'ים ודדליפט – כולם במשקל בינוני. המטרה היא לשפר סיבולת שריר, יציבות וכוח מתפרץ תוך שמירה על טכניקה נכונה. צפו לאימון מאתגר שיגרום לשרירים לעבוד ולהזיע לאורך כל הדרך.</string>
+
+    <string name="health_long_txt">בהצטרפותי לאימונים באפליקציה, אני מאשר/ת כי מצבי הבריאותי מאפשר לי לבצע פעילות גופנית. אני מבין/ה שהתכנים כוללים סרטוני הדגמה ואימונים בליווי מדריך מוסמך, ואני נוטל/ת אחריות מלאה על השתתפותי. במידה ויש לי מגבלה רפואית או חוסר ודאות בנוגע למצב הבריאותי שלי – אני מתחייב/ת להיוועץ עם רופא טרם ביצוע התרגילים.</string>
+
+
+    <string-array name="my_options">
+        <item>מתחילים</item>
+        <item>בינוני</item>
+        <item>מתקדמים</item>
+    </string-array>
+
+    <string-array name="my_genders">
+        <item>זכר</item>
+        <item>נקבה</item>
+        <item>אחר</item>
+    </string-array>
+
+
+
+</resources>
